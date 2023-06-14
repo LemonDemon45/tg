@@ -1,0 +1,12 @@
+function reverseWords(sentence) {
+    return function (){
+        let words = sentence.split('');
+        let reversed = words.reverse();
+        let result = reversed.join('');
+        return result;
+    }
+}
+
+let sentence = "Hello world";
+let reversed = reverseWords(sentence)
+console.log(reversed());
